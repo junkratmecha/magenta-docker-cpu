@@ -7,7 +7,30 @@ python with magenta without cpu
 docker-compose build --no-cache
 docker-compose up -d
 
-# VAE command
+# RNN command sample
+
+https://github.com/magenta/magenta/tree/main/magenta/models/melody_rnn
+
+melody_rnn_generate \
+--config=basic \
+--bundle_file=/data/ckpt/basic_rnn.mag \
+--output_dir=/data/output \
+--num_outputs=1 \
+--num_steps=128 \
+--primer_melody="[60]"
+
+https://github.com/magenta/magenta/tree/main/magenta/models/drums_rnn
+
+drums_rnn_generate \
+--config=one_drum \
+--bundle_file=/data/mags/drum_kit_rnn.mag \
+--output_dir=/data/output \
+--num_outputs=1 \
+--num_steps=128 \
+--qpm=120.0 \
+--primer_drums=“[(36,)]”
+
+# VAE command()
 
 https://github.com/magenta/magenta/tree/main/magenta/models/music_vae
 
