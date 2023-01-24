@@ -1,6 +1,7 @@
-# simple magenta-docker
+# simple magenta-docker(cpu)
 
-python with magenta without cpu
+python with magenta without gpu
+for only generate not training
 
 # introduce
 
