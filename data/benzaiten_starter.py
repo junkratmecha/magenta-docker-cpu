@@ -10,6 +10,7 @@ import pretty_midi # TODO: midoで代替できそうだったら代替する
 from collections import OrderedDict
 import subprocess
 import IPython
+import glob
 
 from extention import postprocess_to_diatonic_melody
 
@@ -168,7 +169,6 @@ def parse_chord_for_magenta(filepath:str) -> str:
     return chords_str
 
 
-import glob
 
 
 def run():
