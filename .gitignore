@@ -1,3 +1,1 @@
-data/ckpt
-data/output
-data/input
+data/__pycache__
