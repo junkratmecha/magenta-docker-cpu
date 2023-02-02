@@ -143,10 +143,16 @@ def parse_chord_for_magenta(filepath:str) -> str:
     # magenta向けにコード進行列のstringを加工
     # TODO: chord記法の変換パターンの網羅
     dict_modify_chords = OrderedDict({
+        'dominant-seventh': '7 dom',
+        'augmented-seventh': '+maj7',
         'seventh': '7',
+        # '-seventh': '7',
         'major': 'M',
         'minor': 'm',
-        '-': ''
+        '-': '',
+        'augmented': '+',
+        'diminished': 'o',
+        '-': 'b'
     })
     chords_str = '"'
     with open(filepath, 'r') as f:
