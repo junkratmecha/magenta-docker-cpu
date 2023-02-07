@@ -1,5 +1,5 @@
 # simple magenta-docker(cpu)
-
+## 超注意 m1では動かないようですのでお気をつけて。。。
 python with magenta without gpu
 for only generate not training
 
